@@ -7,7 +7,7 @@ const cors = require('cors')
 
 const upload = multer({})
 
-const allowedOrigin = 'https://food-website-sand-two.vercel.app';
+const allowedOrigin = 'https://food-deliery-ui.vercel.app';
 
 
 app.use(cors({
