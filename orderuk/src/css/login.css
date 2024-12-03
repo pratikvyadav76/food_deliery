@@ -1,0 +1,14 @@
+.authmainwrap {
+  display: flex; 
+padding: 1.25rem; 
+justify-content: center; 
+height: 100%; 
+
+}
+
+
+@media (min-width: 1536px) { 
+    .authmainwrap{
+        margin: 32px 0px;
+    }
+}

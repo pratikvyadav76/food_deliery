@@ -1,0 +1,261 @@
+.checkout-page {
+  padding: 2rem;
+}
+.checkout-page .section {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.left-section {
+  margin-top: 1.3rem;
+  padding: 0.5rem;
+  border: 1px solid #03081f;
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 18px;
+}
+.backButton .icon {
+  font-weight: 400;
+}
+
+.backButton span {
+  font-weight: 600;
+}
+
+h2,
+h3 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.order-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.order-item-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.item-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.item-quantity {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-price {
+  color: #028643;
+}
+
+.notes-section {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.notes-section label {
+  opacity: 0.7;
+  font-size: 13px;
+  gap: 0.3rem;
+}
+
+.notes-section input {
+  width: 100%;
+  padding: 0.3rem 0.7rem;
+  font-size: 13px;
+  border: 1px solid #202938;
+  border-radius: 100px;
+  outline: none;
+}
+
+.delivery-address,
+.summary {
+  margin-bottom: 1rem;
+}
+
+.delivery-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.8rem;
+  border-radius: 56px;
+  border: 1px solid #03081fde;
+}
+.delivery-address .left {
+  display: flex;
+  gap: 2rem;
+}
+.delivery-address .left .icon-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  padding: 0.7rem;
+  border-radius: 40px;
+  color: #ff6347;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid #202938dc;
+}
+.delivery-address .left .address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.delivery-address .left .address h3 {
+  font-weight: 600;
+}
+.delivery-address .left .address p {
+  opacity: 0.7;
+  font-size: 12px;
+}
+.summary {
+  padding-top: 0.8rem;
+  border-top: 1px solid #202938;
+}
+.summary .sum-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.4rem;
+  font-size: 13px;
+  opacity: 0.7;
+}
+.summary .sub-total {
+  border-top: 1px solid #d9d9d9;
+  padding: 0.5rem 0;
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+.summary .sub-total .price {
+  font-weight: 600;
+  font-size: 16px;
+}
+.summary {
+  text-align: center;
+}
+
+.payment-button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #fc8a06;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.07rem;
+}
+
+.payment-button:hover {
+  background-color: #e5533f;
+}
+
+.more-restaurants {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.more-restaurants h3 {
+  color: #ff6347;
+}
+.similar-restaurants {
+  margin: 3rem 0;
+}
+.similar-restaurants h1 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.restaurant-card {
+  text-align: center;
+  padding: 1rem;
+}
+
+.restaurant-img {
+  width: 100%;
+  max-height: 40vh;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkout-page {
+    padding: 1rem;
+  }
+
+  .section {
+    flex-direction: column;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .summary {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .delivery-address .left .icon-box {
+    width: 36px;
+    height: 36px;
+  }
+
+  .payment-button {
+    padding: 0.6rem;
+    font-size: 13px;
+  }
+}
